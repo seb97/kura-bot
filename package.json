@@ -1,0 +1,11 @@
+{
+  "name": "kurabot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "kb.js",
+  "scripts": {
+    "test": "node kb.js"
+  },
+  "author": "kurama",
+  "license": "ISC"
+}
