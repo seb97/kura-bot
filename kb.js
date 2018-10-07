@@ -1,6 +1,6 @@
 // Load up the discord.js library
 const Discord = require("discord.js");
-
+const token = process.env.token
 // Ceci est votre client. Certaines personnes l'appellent `bot`, d'autres l'appellent` soi-même`,
 // certains pourraient l'appeler `cootchie`. De toute façon, quand vous voyez `client.something`, ou` bot.something`,
 // c'est ce à quoi nous nous référons. Votre client
@@ -127,4 +127,4 @@ client.on("message", async message => {
 });
 
 
-client.login(config.token);
+client.login(token);
