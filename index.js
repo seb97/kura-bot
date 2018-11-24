@@ -1,13 +1,13 @@
 // Load up the discord.js library
 const Discord = require("discord.js");
-
+const tocken = process.env.token
 // Ceci est votre client. Certaines personnes l'appellent `bot`, d'autres l'appellent` soi-même`,
 // certains pourraient l'appeler `cootchie`. De toute façon, quand vous voyez `client.something`, ou` bot.something`,
 // c'est ce à quoi nous nous référons. Votre client
 const client = new Discord.Client();
 
 // Ici nous chargeons le fichier config.json qui contient notre jeton et nos valeurs de préfixe.
-const config = require("./kb.json");
+const config = require("token");
 // config.token contient le jeton du bot
 // config.prefix contient le préfixe du message.
 
