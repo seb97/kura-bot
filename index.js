@@ -7,7 +7,7 @@ const tocken = process.env.token
 const client = new Discord.Client();
 
 // Ici nous chargeons le fichier config.json qui contient notre jeton et nos valeurs de préfixe.
-const config = require("token");
+const config = require("./kb.json");
 // config.token contient le jeton du bot
 // config.prefix contient le préfixe du message.
 
