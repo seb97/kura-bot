@@ -1,4 +1,5 @@
 { 
-  "token"  : "NDAwNjQyMzY3NjU0MTk5Mjk2.DpkZGw.VP5PM03tL3B9TlL73LfOokQ3XGE",
+  const tocken = process.env.token
+  const config = require("token");,
   "prefix" : "~"
 }
