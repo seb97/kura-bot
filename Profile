@@ -1,1 +1,1 @@
-worker: node kb.js
+worker: node index.js
