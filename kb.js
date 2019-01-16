@@ -422,4 +422,4 @@ if(message.content.startsWith(prefix + "help-c")) {
 message.author.send(embed);
 });
 
-client.login("NDAwNjQyMzY3NjU0MTk5Mjk2.Dw46Fw.yZPQYpQ77oKZ0AVxOgEPpHcve8Q");
+client.login(process.env.TOKEN);
