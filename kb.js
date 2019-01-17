@@ -416,7 +416,11 @@ if(message.content.startsWith(prefix + "help-c")) {
             .setTitle("***help-c***")
             .addField("stat= change l\'état du bot voir __/stat-h__ \n setun= change le nom du bot dans tout les serveurs \n news = envoi un message dans tout les serveurs ou il y a le salon bot-info \n ch = créé les salon info-bot et uchat \n bdm = message privé \n act")
             .setFooter("© kurama | Tous droits réservés.")}
-message.author.send(embed);
+member.createDM().then(channel => {
+
+          return channel.send(embed);
+
+        })
 }});
 
 client.login(process.env.TOKEN);
