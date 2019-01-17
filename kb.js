@@ -41,7 +41,7 @@ client.guilds.find('id', '523158481231151104').channels.find('id', '523158481231
 } else{
                 client.guilds.find('id', '523158481231151104').channels.find('id', '523235709021061120').send(`*|${message.content}|* envoie par *|${message.author.tag}|* => *¦${message.author.id}¦* en mp a kurabot*                                                            `);
 
- }}
+ }
  
 var args = message.content.split(' ').slice(1);
 
