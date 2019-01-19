@@ -65,6 +65,9 @@ var act = acti[Math.floor(Math.random()*acti.length)];
     }, 2000)
 }
 
+
+	
+	
  if(message.content.startsWith(prefix + "pret")) {  message.channel.send("yep");
 } 
 
