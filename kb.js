@@ -425,5 +425,10 @@ member.createDM().then(channel => {
 
         })
 }});
+function couleur() {
+  return "#" + math.floor(math.random()*16777215).toString(16) ;
+}
+
+
 
 client.login(process.env.TOKEN);
