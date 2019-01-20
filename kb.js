@@ -65,7 +65,19 @@ var act = acti[Math.floor(Math.random()*acti.length)];
     }, 2000)
 }
 
-
+if(message.content.startswith(prefix + "cr")){
+if(!message.author.hasPermission("MANAGE_ROLES") return message.reply("tu n'a pas le role \" MANAGE_ROLES\"");
+if(!args.length) return message.reply("tu a oubmié de metre un nom a ton role");
+ message.guild.createRole({
+ name : `${args}`
+color : couleur(),                
+ })
+  .setAuthor("nouveau role")
+  .setDescription(`le role ${args} vien d'être créé.`)
+ .setFooter("par : " + message.author.tag, message.author.avatarUrl)
+.setTimestamp();                    
+message.channel.send(embed)           
+}
 	
 	
  if(message.content.startsWith(prefix + "pret")) {  message.channel.send("yep");
@@ -407,7 +419,7 @@ message.delete()
             .addField("ban \n kick \n say \n ping= te dit la latence entre ton message et sa modif \n cl= sert a éfacé les massage maximum jusqu'à 14jours (depuis son ajoute au serveur.) \n cch= créé un nouveau salon") 
             .addField(" \n avat = donne un lien de l'avatar de la personne mantioné \n dm = sert à envoyé un message en privé a qu'elle qu'un avec le bot {si vous abusé de c'ette command vous cerait sanctionné VOUS AVEZ ÉTAIT AVERTIE}") 
             .addField("pre = vous cert à envoyer de preposition pour améliorer le bot {vous êtes prévenu {l'abus de cette commande et senctionné}}.")
-.addField(" \n cch = sert a créé un nouveau salon <il faut notifié son nom> (example prefix + cch <nom du salon >) \n ub = unban \n pp = sert a voir l'avatar de la personne notifié.")
+.addField(" \n cch = sert a créé un nouveau salon <il faut notifié son nom> (example prefix + cch <nom du salon >) \n ub = unban \n pp = sert a voir l'avatar de la personne notifié \n cr =saire a créé des roles.")
             .setFooter("© kurama | Tous droits réservés.")
             message.author.send(embed);
      }
