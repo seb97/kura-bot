@@ -66,8 +66,8 @@ var act = acti[Math.floor(Math.random()*acti.length)];
 }
 
 if(message.content.startswith(prefix + "cr")){
-if(!message.author.hasPermission("MANAGE_ROLES") return message.reply("tu n'a pas le role MANAGE_ROLES");
-if(!args.length) return message.reply("tu a oubmié de metre un nom a ton role");
+if(!message.member.hasPermission("MANAGE_ROLES") return message.reply("tu n'a pas le role MANAGE_ROLES");
+if(!args.length) return message.reply("tu a oublié de metre un nom a ton role");
  message.guild.createRole({
  name : `${args}`
 color : couleur(),                
