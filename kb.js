@@ -65,19 +65,7 @@ var act = acti[Math.floor(Math.random()*acti.length)];
     }, 2000)
 }
 
-if(message.content.startswith(prefix + "cr")){
-if(!message.member.hasPermission("MANAGE_ROLES") return message.reply("tu n'a pas le role MANAGE_ROLES");
-if(!args.length) return message.reply("tu a oublié de metre un nom a ton role");
- message.guild.createRole({
- name : `${args}`
-color : couleur(),                
- })
-  .setAuthor("nouveau role")
-  .setDescription(`le role ${args} vien d'être créé.`)
- .setFooter("par : " + message.author.tag, message.author.avatarUrl)
-.setTimestamp();                    
-message.channel.send(embed)           
-}
+
 	
 	
  if(message.content.startsWith(prefix + "pret")) {  message.channel.send("yep");
