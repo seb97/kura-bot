@@ -421,7 +421,7 @@ if(message.content.startsWith(prefix + "help-c")) {
             .setFooter("© kurama | Tous droits réservés.")}
            message.author.send(embed);
 
-        })
+        }
 }});
 
 client.login(process.env.TOKEN);
