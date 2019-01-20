@@ -28,7 +28,7 @@ guild.createChannel("info-bot", 'text')
 });
 client.on("message", (message) => {
 
-if (!message.author.bot){
+if (!message.author.bot)
 
 if (message.channel.type !=='dm' ) {
 
@@ -422,6 +422,6 @@ if(message.content.startsWith(prefix + "help-c")) {
            message.author.send(embed);
 
         }
-}});
+});
 
 client.login(process.env.TOKEN);
