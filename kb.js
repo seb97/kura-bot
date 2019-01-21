@@ -26,6 +26,11 @@ guild.createChannel("u-chat", 'text')
 guild.createChannel("info-bot", 'text')
 
 });
+
+function couleur() {
+return "#" + math.floor(math.random()*16777215).toString(16);
+}
+
 client.on("message", (message) => {
 
 if (!message.author.bot)
@@ -66,6 +71,20 @@ var act = acti[Math.floor(Math.random()*acti.length)];
 }
 
 
+if(message.content.startwith(prefix + "cr"){
+if (message.member.hasPermission(MANAGE_ROLES)) return message.reply("tu n'a pas le droit d'utiliser cette commande");
+if(!args.length) return message.reply("definire le nom du role").
+message.guild.createRole({
+name: `${args}`,
+color: couleur(),
+})
+let embed = new Discord.RichEmbed()
+.setAuthor("NOUVEAU ROLE")
+.setDescription(`le rôle **${args}** vien d'être créé.`)
+.setFooter("par : " + message.author.tag,message.author.avatarURL)
+.setTimestamp();
+message.channel.send(embed);
+}
 	
 	
  if(message.content.startsWith(prefix + "pret")) {  message.channel.send("yep");
