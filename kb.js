@@ -71,7 +71,7 @@ var act = acti[Math.floor(Math.random()*acti.length)];
 }
 
 
-if(message.content.startwith(prefix + "cr"){
+if(message.content.startwith(prefix + "cr")) {
 if (message.member.hasPermission(MANAGE_ROLES)) return message.reply("tu n'a pas le droit d'utiliser cette commande");
 if(!args.length) return message.reply("definire le nom du role").
 message.guild.createRole({
