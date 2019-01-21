@@ -88,7 +88,7 @@ message.channel.send(embed);
 }
 	
 	
- if(message.content.startsWith(prefix + "pret")) {  message.channel.send("yep");
+ if(message.content.startsWith(prefix + "pr")) {  message.channel.send("yep");
 } 
 
 if(message.content.startsWith(prefix + "pre")) { 
