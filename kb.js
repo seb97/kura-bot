@@ -27,9 +27,6 @@ guild.createChannel("info-bot", 'text')
 
 });
 
-function couleur() {
-return "#" + math.floor(math.random()*16777215).toString(16);
-}
 
 client.on("message", (message) => {
 
@@ -68,6 +65,10 @@ var act = acti[Math.floor(Math.random()*acti.length)];
         client.user.setActivity(act);
 
     }, 2000)
+}
+
+	function couleur() {
+return "#" + math.floor(math.random()*16777215).toString(16);
 }
 
 
