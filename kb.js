@@ -72,7 +72,7 @@ return "#" + math.floor(math.random()*16777215).toString(16);
 }
 
 
-if(message.content.startwith(prefix + "cr")) {
+if(message.content.startsWith(prefix + "cr")) {
 if (message.member.hasPermission(MANAGE_ROLES)) return message.reply("tu n'a pas le droit d'utiliser cette commande");
 if(!args.length) return message.reply("definire le nom du role").
 message.guild.createRole({
