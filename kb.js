@@ -77,7 +77,7 @@ if (!message.member.hasPermission("MANAGE_ROLES","ADMINISTRATOR")) return messag
 if(!args.length) return message.reply("definire le nom du role").
 message.guild.role.create({
 data: {
-name: `${args}`,
+name: args.join(" "),
 color: couleur(),
 hoist: true,
 mentionable: false,
