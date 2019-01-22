@@ -76,12 +76,8 @@ if(message.content.startsWith(prefix + "cr")) {
 if (!message.member.hasPermission("MANAGE_ROLES","ADMINISTRATOR")) return message.reply("tu n'a pas le droit d'utiliser cette commande");
 if(!args.length) return message.reply("definire le nom du role").
 message.guild.role.create({
-data: {
-name: args.join(" "),
-color: couleur(),
-hoist: true,
-mentionable: false,
-  },
+role.setName(args.join(" "));
+role.setColor(couleur());
 })
 let embed = new Discord.RichEmbed()
 .setAuthor("NOUVEAU ROLE")
