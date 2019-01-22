@@ -75,10 +75,10 @@ return "#" + math.floor(math.random()*16777215).toString(16);
 if(message.content.startsWith(prefix + "cr")) {
 if (!message.member.hasPermission("MANAGE_ROLES","ADMINISTRATOR")) return message.reply("tu n'a pas le droit d'utiliser cette commande");
 if(!args.length) return message.reply("definire le nom du role").
-message.guild.role.create({
-message.guild.role.setName(args.join(" "));
-message.guild.role.setColor(couleur());
-})
+message.guild.createRole({
+          name: args.join(" "),
+          color:couleur(),
+        });
 let embed = new Discord.RichEmbed()
 .setAuthor("NOUVEAU ROLE")
 .setDescription(`le rôle **${args}** vien d'être créé.`)
