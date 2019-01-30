@@ -14,7 +14,7 @@ const prefix = "k";
 client.on('ready', () => {
   console.log('I am ready!');
   client.user.setStatus("idle");
-let statuses = ['prefix: k', `utilisateurs: ${bot.users.size}`,`serveurs: ${bot.guilds.size}`];
+let statuses = [`prefix: k`, `utilisateurs: ${bot.users.size}`,`serveurs: ${bot.guilds.size}`];
 setInterval(function() {
 let status = statuses[Math.floor(Math.random()*statuses.length)];
 bot.user.setActivity(status, {type: "WATCHING"});
