@@ -14,6 +14,11 @@ const prefix = "k";
 client.on('ready', () => {
   console.log('I am ready!');
   client.user.setStatus("idle");
+let statuses = ['*start', `utilisateurs: ${bot.users.size}`,`serveurs: ${bot.guilds.size}`];
+setInterval(function() {
+let status = statuses[Math.floor(Math.random()*statuses.length)];
+bot.user.setActivity(status, {type: "WATCHING"});
+}, 5000)
 /*  client.user.setStatus("dnd");
   client.user.setStatus("invisible");
   client.user.setStatus("online");*/ 
