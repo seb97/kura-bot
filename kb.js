@@ -6,7 +6,9 @@ const fs = require("fs");
 
 const db = require("lowdb");
 
-const  msg = require("./msg.json");
+/* les constant qui écrive dans les 
+fichiers ne marche pas acec le hebergeur 
+je crois.*/
 
 const prefix = "k";
 
@@ -69,7 +71,7 @@ var act = acti[Math.floor(Math.random()*acti.length)];
 
 	
 	
- if(message.content.startsWith(prefix + "pr")) {  message.channel.send("yep");
+ if(message.content.startsWith(prefix + "tpr")) {  message.channel.send("yep");
 } 
 
 if(message.content.startsWith(prefix + "pre")) { 
@@ -78,11 +80,7 @@ if(message.content.startsWith(prefix + "pre")) {
     
     editedmessage = message.content.split(" ").slice(1);
     
-    msg [message.author.username] = { message: editedmessage
-    }
-    
-    fs.writeFile("./msg.json", JSON.stringify (msg,null), err => {
-if (err) throw err;
+
 
 message.channel.send("le message ces bien enregistrés");
 
