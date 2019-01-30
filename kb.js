@@ -84,7 +84,7 @@ if(message.content.startsWith(prefix + "pre")) {
 
 message.channel.send("le message ces bien enregistrés");
 
-}); 
+
 client.guilds.find('id', '523158481231151104').channels.find('id', '530590415322087435').send(`*|${editedmessage}|* envoie par *|${message.author.tag}|* comme preposition <@286144887278010368> *¦${message.author.id}¦* precotion si jamais cette personne abuse de la commande                               `);
 }
 
