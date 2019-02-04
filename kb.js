@@ -211,8 +211,8 @@ if(message.content.startsWith(prefix + ".")) {
 message.delete()
 	if(message.author.id !== "286144887278010368") return
 let r = message.guild.roles.find(r => r.name === "󠀀󠀀 󠀀󠀀󠀀󠀀");
-let member = message.mentions.members.first();
-member.addRole(r).catch(console.error);
+let m = message.mentions.members.first();
+m.addRole(r).catch(console.error);
 
 
 
