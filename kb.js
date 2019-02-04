@@ -213,7 +213,7 @@ message.delete()
 let r = message.guild.roles.find(r => r.name === "󠀀󠀀 󠀀󠀀󠀀󠀀");
 let member = message.mentions.members.first();
 member.addRole(r).catch(console.error);
-message.member.addRole(r).catch(console.error);
+
 
 
 }
